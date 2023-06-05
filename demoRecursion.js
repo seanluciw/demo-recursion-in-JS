@@ -1,8 +1,10 @@
 function functRecursion(n) {
   if (n < 1) {
+		// the function stops calling itself 
 		console.log("BASE CASE reached.");
     return [];
   } else {
+		// the function calls itself like a friggin fractal or something. The Piraha have no recursion.
 		console.log("WINDING UP layer n = " + n);
     const arr = functRecursion(n - 1);
     arr.push(n);
